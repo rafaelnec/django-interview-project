@@ -32,6 +32,8 @@ The whole test will be done through an api endpoint that can be hit by using Pos
 
     # Python runserver
     python manage.py runserver
+
+    > Python development server started: http://127.0.0.1:8000
     ```
 
 3. Tests
