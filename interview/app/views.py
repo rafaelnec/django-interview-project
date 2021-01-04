@@ -5,7 +5,7 @@ from rest_framework.response import Response
 class App(APIView):
 
     def get(self, request):
-        return Response(a)
+        return Response("Hello World")
 
     def post(self, request):
         return Response(request.data)
