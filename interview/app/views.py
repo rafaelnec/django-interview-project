@@ -1,10 +1,14 @@
-from django.http import HttpResponse
-from django.views import View
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
-class App(View):
+
+class App(APIView):
 
     def get(self, request, *args, **kwargs):
-        return HttpResponse('"Hello world"')
+        return Response('Hello world')
+
+    def post(self, request, *args, **kwargs):
+        return Response(request.data)
 
     def __all_animals(self):
 
@@ -69,4 +73,4 @@ class App(View):
                 "type": 'cow',
                 'name': 'guernsey'
             }
-        ];
+        ]
