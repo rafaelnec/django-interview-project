@@ -4,10 +4,10 @@ from rest_framework.response import Response
 
 class App(APIView):
 
-    def get(self, request, *args, **kwargs):
-        return Response('Hello world')
+    def get(self, request):
+        return Response(a)
 
-    def post(self, request, *args, **kwargs):
+    def post(self, request):
         return Response(request.data)
 
     def __all_animals(self):
